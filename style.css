@@ -56,6 +56,17 @@
         box-sizing: border-box;
     }
 
+    .projects-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .projects-content .my-col {
+        flex: 1 1 calc(50% - 10px); /* Adjust to ensure two items per row with space between */
+        box-sizing: border-box;
+    }
+
     .my-row {
         gap: 10px;
     }
@@ -63,17 +74,6 @@
     .my-row .my-col {
         text-align: center;
         width: 100%;
-    }
-
-    .projects-content {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .my-col {
-        flex: 1 1 calc(50% - 10px); /* Adjust to ensure two items per row with space between */
-        box-sizing: border-box;
     }
 }
 
@@ -160,6 +160,17 @@
     }
 
     .experience-item {
+        flex: 1 1 calc(50% - 10px); /* Adjust to ensure two items per row with space between */
+        box-sizing: border-box;
+    }
+
+    .projects-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .projects-content .my-col {
         flex: 1 1 calc(50% - 10px); /* Adjust to ensure two items per row with space between */
         box-sizing: border-box;
     }
