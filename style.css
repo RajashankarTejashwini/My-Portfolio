@@ -141,7 +141,9 @@ body {
         background-image: radial-gradient(circle, rgba(15, 14, 14, 0.3), rgba(102, 96, 96, 0.4), rgba(163, 160, 160, 0.16)), url('./Images/heroImg3.avif');
         background-size: cover;
         background-position: center;
+        height: 100vh; /* Full height */
         padding: 2rem 1rem;
+        box-sizing: border-box;
     }
 
     .sub-heading {
@@ -187,6 +189,21 @@ body {
     .experience-item,
     .projects-content .my-col {
         flex: 1 1 calc(50% - 10px); /* Adjust to ensure two items per row with space between */
+    }
+
+    .projects-content .my-col {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .my-card {
+        background-color: #4CAF50;
+        color: white;
+        padding: 15px;
+        margin: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
     .contact-content {
