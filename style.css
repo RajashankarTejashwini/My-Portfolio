@@ -1,5 +1,4 @@
 /*index.css*/
-/* Responsive CSS file styles defined for smaller width devices */
 /* Base styles for common elements */
 body {
     font-family: Arial, sans-serif;
@@ -15,6 +14,7 @@ body {
     position: fixed;
     width: 100%;
     z-index: 1000;
+    top: 0; /* Ensure it is at the top */
 }
 
 .navbar {
@@ -138,12 +138,13 @@ body {
         align-items: center;
         text-align: center;
         color: #fff;
-        background-image: radial-gradient(circle, rgba(15, 14, 14, 0.3), rgba(102, 96, 96, 0.4), rgba(163, 160, 160, 0.16)), url('Assets/image1.jfif');
+        background-image: radial-gradient(circle, rgba(15, 14, 14, 0.3), rgba(102, 96, 96, 0.4), rgba(163, 160, 160, 0.16)), url('./Images/heroImg3.avif');
         background-size: cover;
         background-position: center;
-        height: 150vh; /* Full height */
-        padding: 3rem 2rem;
+        height: 100vh; /* Full height */
+        padding: 2rem 1rem;
         box-sizing: border-box;
+        margin-top: 60px; /* To avoid overlapping with the header */
     }
 
     .sub-heading {
@@ -163,8 +164,7 @@ body {
     }
 
     .about,
-    .experience-container,
-    .projects-content {
+    .experience-container {
         display: flex;
         flex-direction: column;
         gap: 1rem;
@@ -173,35 +173,34 @@ body {
 
     .about .about-text,
     .about .about-image img,
-    .experience-item,
-    .projects-content .my-col {
+    .experience-item {
         width: 100%;
         padding: 1rem;
         box-sizing: border-box;
     }
 
     .about .about-text,
-    .experience-item,
-    .projects-content .my-col {
+    .experience-item {
         text-align: center;
     }
 
-    .experience-item,
+    .projects-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
     .projects-content .my-col {
         flex: 1 1 calc(50% - 10px); /* Adjust to ensure two items per row with space between */
+        box-sizing: border-box;
     }
 
-    .projects-content .my-col {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-    }
-
-    .my-card {
+    .projects-content .my-card {
         background-color: #4CAF50;
         color: white;
         padding: 15px;
-        margin: 10px;
+        margin: 10px 0;
         border-radius: 5px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
