@@ -141,7 +141,7 @@ body {
         background-image: radial-gradient(circle, rgba(15, 14, 14, 0.3), rgba(102, 96, 96, 0.4), rgba(163, 160, 160, 0.16)), url('./Images/heroImg3.avif');
         background-size: cover;
         background-position: center;
-        height: 100vh; /* Full height */
+        height: 150vh; /* Full height */
         padding: 2rem 1rem;
         box-sizing: border-box;
     }
