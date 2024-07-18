@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff; /* Changed to white */
+}
+
+/* Header Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 90%;
+    padding: 1rem 5rem;
+    background-color: #2d2d2d;
+    z-index: 1000;
+}
+
+.logo-heading {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.hamburger {
+    display: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+.cross-icon.hidden {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.menu .menu-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-list .menu-list-items {
+    margin-left: 1rem;
+}
+
+.menu-list-items .links {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s;
+}
+
+.menu-list-items .links:hover {
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Main Hero Section Styles */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('Assets/image1.jfif') no-repeat center center/cover;
+    color: #000;
+    animation: fadeIn 2s ease-in-out;
+    text-align: center;
+}
+
+.hero .intro {
+    max-width: 80%;
+    margin: 0 auto;
+    animation: slideInFromLeft 2s ease-in-out;
+}
+
+.hero .intro-buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Button Styles */
+.btn {
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+.common-btn {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.common-btn:hover {
+    background-color: #fff;
+    color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.ghost-btn {
+    background-color: #fff;
+    color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.ghost-btn:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* Common Section Heading Styles */
+.section-heading {
+    font-size: 1rem; /* Adjust the font size as desired */
+    margin-bottom: 2rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* About section styles */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem;
+    background: #ffffff; /* Changed to white */
+    color: #333;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.about-text {
+    flex: 1 1 45%;
+    padding: 1rem;
+}
+
+.about-image {
+    flex: 1 1 45%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Experience section styles */
+.experience {
+    padding: 5rem 2rem;
+    background: #f9f9f9; /* Light background for the section */
+    text-align: center;
+}
+
+.experience-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Ensures four columns */
+    gap: 1.5rem;
+    animation: slideInFromLeft 2s ease-in-out;
+}
+
+.experience-item {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-left: 5px solid #4CAF50; /* Add a colorful border */
+}
+
+.experience-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.experience-item .icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #4CAF50; /* Add a color to the icon */
+}
+
+.experience-item .title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.experience-item .description {
+    color: #666;
+}
+
+.experience-item:nth-child(2n) {
+    border-left-color: #FF9800; /* Different color for alternating items */
+}
+
+.experience-item:nth-child(3n) {
+    border-left-color: #03A9F4; /* Different color for every third item */
+}
+
+/* Projects section styles */
+.projects {
+    padding: 2rem 13rem;
+    background: #ffffff; /* Changed to white */
+    text-align: center;
+}
+
+.projects-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem; /* Increased spacing between cards */
+    justify-content: center;
+    margin-top: 2rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.my-card {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 2rem; /* Adjusted for better spacing */
+    border-radius: 10px;
+    text-align: left; /* Changed to left-align text inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 2s ease-in-out;
+    margin-bottom: 1rem; /* Added margin bottom for better spacing between rows */
+}
+
+.icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Contact section styles */
+.contact {
+    padding: 5rem 2rem;
+    background: #ffffff; /* Changed to white */
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.form-controls {
+    width: 100%;
+    max-width: 600px;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-btn {
+    padding: 0.7rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-btn:hover {
+    background-color: #fff;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #2d2d2d;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-menu .footer-menu-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    margin: 0;
+    border-radius: 50%;
+    background-color: #4CAF50;
+}
+
+.footer-links {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hero {
+        height: 50vh;
+        background-position: top;
+    }
+
+    .about,
+    .projects {
+        flex-direction: column;
+    }
+
+    .projects-content {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 1rem 2rem;
+    }
+
+    .menu .menu-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-list-items {
+        margin: 0.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu.show {
+        display: block;
+    }
+}

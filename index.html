@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar header section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h2 class="logo-heading">Tejashwini Rajashankar</h2>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars hamburger-icon"></i>
+                <i class="fas fa-times cross-icon"></i>
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="menu-list-items"><a class="links" href="#home">Home</a></li>
+                    <li class="menu-list-items"><a class="links" href="#about">About</a></li>
+                    <li class="menu-list-items"><a class="links" href="#experience">Experience</a></li>
+                    <li class="menu-list-items"><a class="links" href="#projects">Projects</a></li>
+                    <li class="menu-list-items"><a class="links" href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main hero banner -->
+    <section id="home" class="hero">
+        <div class="intro">
+            <div class="headings">
+                <h3 class="greet-heading">Hello, I'm</h3>
+                <h1 class="my-heading">Tejashwini Rajashankar</h1>
+                <h4 class="sub-heading">
+                    California State University, Los Angeles.<br>
+                    Electrical Engineering | Computer Engineering | Embedded Systems | Power Electronics
+                </h4>
+            </div>
+            <div class="intro-buttons">
+                <button class="btn common-btn">Hire Me</button>
+                <button class="btn ghost-btn">Get Resume</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-text">
+            <h1 class="my-heading">About Me</h1>
+            <p class="lead-para">
+                Driven by a passion for the future of technology,
+                I am a graduate student in Electrical Engineering
+                committed to continuous learning and professional
+                growth. With a solid background in both hardware
+                and software engineering, including PCB design,
+                advanced circuit simulation, and software development,
+                I stay current with industry advancements through
+                research, workshops, and active participation in
+                technical communities.
+            </p>
+            <h1><b>Skills</b></h1>
+            <small>
+                <b>Programming Languages</b><br>
+                <i>C, C++, Python, VHDL, HTML, CSS, JavaScript</i><br>
+                <b>Tools & Software</b><br><i>Git, MATLAB, FPG, AutoCAD, CAD, OrCAD, LabVIEW, Altium, LTSpice</i><br>
+                <b>Frameworks & Databases<br></b><i>Django, My SQL</i><br>
+                <b>Embedded Systems</b><br><i> C, RTOS, Firmware development, DSP, FPGA, SOC, ASIC</i><br>
+                <b>Hardware</b><br><i>PLC, PCB, Circuit Design, HMI, Troubleshoot, System Design, Engineering design</i><br>
+            </small>
+        </div>
+        <div class="about-image">
+            <img src="Assets/image3.jfif" alt="About Image">
+        </div>
+    </section>
+    <!-- Internship section -->
+    <section class="experience" id="experience">
+        <div class="section-heading">
+            <h1 class="my-heading text-center">Experience</h1>
+        </div>
+        <div class="experience-container">
+            <div class="experience-item">
+                <i class="fas fa-briefcase icon"></i>
+                <h3 class="title"><small><b>Research Assistant: CSULA, 2023-2024</b></small></h3>
+                <p class="description"><small><i>Collaborated on research presentations to boost 
+                    academic engagement and team visibility and played a key role in the development 
+                    and execution of research experiments. Enhanced research accuracy and efficiency 
+                    by implementing advanced data analysis techniques, leading to a 15% improvement 
+                    in data validation and reliability. Served as a Data Analyst, leveraging expertise 
+                    in qualitative data analysis using Dedoose software to extract meaningful insights 
+                    and contribute to comprehensive research reports.</small></i></p>
+            </div>
+            <div class="experience-item">
+                <i class="fas fa-robot icon"></i>
+                <h3 class="title"><small><b>Artificial Intelligence Intern: X-Ciencia Technologies, 2021</b></small></h3>
+                <p class="description"><small><i>Improved AI algorithms for a "Fake News Detection on 
+                    Social Media" project using Anaconda Navigator and Jupyter Notebook, enhancing model 
+                    precision. Utilized libraries such as NumPy, Pandas, and Matplotlib to handle data 
+                    manipulation, analysis, and visualization effectively. Reduced model training time by 
+                    20% through optimized Python code and algorithm adjustments, ensuring efficient use 
+                    of resources and faster results.</i></small></p>
+            </div>
+            <div class="experience-item">
+                <i class="fas fa-microchip icon"></i>
+                <h3 class="title"><small><b>Robotics Intern: Edgate Technologies, 2020</b></small></h3>
+                <p class="description"><small><i>Implemented software upgrades for robotic systems, 
+                    minimized disruptions, and ensured seamless transitions using tools like ROS 
+                    (Robot Operating System) and Gazebo. Participated in brainstorming sessions, 
+                    offering innovative suggestions, and creating comprehensive technical documentation 
+                    to support the development process. Resolved over 30 critical bugs using MATLAB and 
+                    other diagnostic tools, resulting in a 25% increase in software reliability and user 
+                    satisfaction.</i></small></p>
+            </div>
+            <div class="experience-item">
+                <i class="fas fa-cogs icon"></i>
+                <h3 class="title"><small><b>Embedded Systems Intern: Accenture, 2019</b></small></h3>
+                <p class="description"><small><i>Enhanced embedded system software and firmware reliability 
+                    using Python on ARM processors and tools like Keil and Eclipse. Led a team project that 
+                    reduced development time by 10% and conducted a workshop on embedded system design utilizing 
+                    JTAG and other debugging tools. Streamlined firmware testing processes with Jenkins and 
+                    LabVIEW, achieving a 15% improvement in the detection of functional anomalies and ensuring 
+                    higher product quality standards.</i></small></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="services-heading">
+            <h1 class="my-heading text-center">My Projects</h1>
+        </div>
+        <div class="projects-content">
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                            <small><b><a href="https://github.com/RajashankarTejashwini/">Autonomous Army Robot for Border
+                                    Surveillance</a></b></small>
+                        </h3>
+                        <p class="small-para">
+                            <i>Designed and implemented an autonomous surveillance robot using Python
+                                and Raspberry Pi, aimed at bolstering border security by automating patrol operations.
+                                Leveraged OpenCV for advanced image processing, ROS (Robot Operating System)
+                                for seamless robot control, and integrated various sensors to collect
+                                comprehensive environmental data.
+                                Enhanced threat detection capabilities by 15%, thereby significantly
+                                reducing military risks through optimized firmware and ensuring reliable
+                                system performance.</i>
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                            <small><b><a href="https://github.com/RajashankarTejashwini/">IoT Smart Water Management
+                                    System </a>(Texas Instruments)</b></small>
+                        </h3>
+                        <p class="small-para">
+                            <i>Designed and implemented an IoT-based smart water management system using
+                                Texas Instruments hardware, integrating real-time weather data for
+                                optimized irrigation. Developed embedded firmware in C/C++ for seamless sensor
+                                integration and control, and created an intuitive user dashboard with Node-RED
+                                and Python for comprehensive data analysis. Achieved a 30% reduction in water
+                                consumption and a 20% increase in crop yield through improved climate
+                                prediction, ultimately contributing to more efficient and sustainable
+                                farming practices.</i>
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fas fa-radar"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                            <b><small><a href="https://github.com/RajashankarTejashwini/Radar-System">Automated Distance
+                                    Measurement Scanner</a></b></small>
+                        </h3>
+                        <p class="small-para">
+                            <i>Programmed a servo motor for rotation and real-time data logging, capturing
+                                hundreds of data points per session. Designed an affordable, customizable
+                                solution with adjustable scan range and speed, enhancing mapping accuracy.
+                                Developed an Arduino-based Radar System
+                                or precise robotics and security applications.
+                                Features include a 15 to 165-degree scan range, real-time data logging,
+                                and customizable settings. </i>
+                    </div>
+                </div>
+            </div>
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fas fa-tractor"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                            <b><small><a
+                                    href="https://github.com/RajashankarTejashwini/Embedded-System_smart-farming">Smart
+                                    Farming</a></b></small>
+                        </h3>
+                        <p class="small-para">
+                            <i>Developed a Python-based smart farming and greenhouse control system
+                                using Zephyr RTOS and nRF Connect SDK, integrating sensors to automate
+                                responses based on set thresholds. Implemented real-time data logging,
+                                remote updates, and automated power management, increasing system reliability
+                                and reducing manual intervention by 40%. Utilized a Nordic Semiconductor
+                                board and SEGGER Embedded Studio to create a customizable solution, improving
+                                water management by 25% and ensuring optimal environmental conditions for crops.
+                                The scalable system supports additional sensors and modules, and allows remote
+                                monitoring and control for easier farm management.</i>
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                            <b><small><a href="https://github.com/RajashankarTejashwini/Embedded-System_Edge-node">Home
+                                    Automation(C)</a></b></small>
+                        </h3>
+                        <p class="small-para">
+                            <i>Leveraged Zephyr RTOS, Bluetooth Low Energy (BLE) stack, and sensor integration
+                                libraries to achieve precise environmental monitoring and streamline data management
+                                processes. Enhanced IoT connectivity across multiple smart home applications,
+                                delivering a robust and reliable solution that significantly improved smart home
+                                technology performance. Designed a Bluetooth-enabled Smart Home Edge Node with Zephyr RTOS, reducing sensor
+                                errors by over 90% and significantly improving data accuracy. Conducted
+                                performance evaluations and optimizations to ensure smooth integration with existing
+                                smart home systems and improve user experience.</i>
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                            <b><small><a href="https://github.com/RajashankarTejashwini/PSOC">Smart Lamp System</a></b></small>
+                        </h3>
+                        <p class="small-para">
+                            <i>Designed and developed a Smart Lamp Control System utilizing
+                                the Cypress PSoC 5LP board, which included the integration of
+                                motion sensors and programmable timers for automatic adjustment
+                                of outdoor lighting. Employed PSoC Creator for both system design
+                                and firmware development, incorporating energy-saving algorithms
+                                to enhance system performance. Successfully achieved a 30% reduction
+                                in energy consumption, significantly improving automation and energy
+                                efficiency while promoting sustainable energy practices. Conducted
+                                extensive testing and optimization to ensure reliability and durability
+                                of the system in various environmental conditions.</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact me section -->
+    <section class="contact" id="contact">
+        <div class="contact-heading">
+            <h1 class="my-heading text-center"><b>Contact Me</b></h1>
+        </div>
+        <div class="contact-content">
+            <div class="contact-form-container">
+                <h1 class="greet-heading"><b>Get In Touch</b></h1>
+                <form class="contact-form">
+                    <input class="form-controls" type="text" placeholder="Your Name">
+                    <input class="form-controls" type="text" placeholder="Your Email">
+                    <input class="form-controls" type="text" placeholder="Your Phone">
+                    <textarea class="form-controls" placeholder="Write your message" name="message" id="" cols="30"
+                        rows="10"></textarea>
+                    <input class="form-btn btn common-btn" type="submit" value="Send Message">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="footer-content text-center">
+            <h4>
+                Tejashwini Rajashankar | trajashankar@gmail.com | (626) 741-4375 | Monterey Park, CA
+            </h4>
+            <div class="social-links">
+                <div class="footer-menu">
+                    <ul class="footer-menu-list">
+                        <li class="footer-list-items">
+                            <a class="footer-links"
+                                href="https://www.facebook.com/profile.php?id=100077915370410">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="https://www.instagram.com/__teju.gowda__/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="https://www.linkedin.com/in/15tr/">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
