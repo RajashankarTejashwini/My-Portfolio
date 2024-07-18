@@ -47,8 +47,12 @@
                 </h4>
             </div>
             <div class="intro-buttons">
-                <button class="btn common-btn">Hire Me</button>
-                <button class="btn ghost-btn">Get Resume</button>
+                <a href="mailto:trajashankar@gmail.com">
+                    <button class="btn common-btn">Hire Me</button>
+                </a>
+                <a href="Assets/Tejashwini_Rajashankar.docx" download="Tejashwini_Rajashankar.docx">
+                    <button class="btn ghost-btn">Get Resume</button>
+                </a>
             </div>
         </div>
     </section>
@@ -281,12 +285,11 @@
         <div class="contact-content">
             <div class="contact-form-container">
                 <h1 class="greet-heading"><b>Get In Touch</b></h1>
-                <form class="contact-form">
-                    <input class="form-controls" type="text" placeholder="Your Name">
-                    <input class="form-controls" type="text" placeholder="Your Email">
-                    <input class="form-controls" type="text" placeholder="Your Phone">
-                    <textarea class="form-controls" placeholder="Write your message" name="message" id="" cols="30"
-                        rows="10"></textarea>
+                <form class="contact-form" action="mailto:trajashankar@gmail.com" method="GET" enctype="text/plain">
+                    <input class="form-controls" type="text" name="name" placeholder="Your Name" required>
+                    <input class="form-controls" type="email" name="email" placeholder="Your Email" required>
+                    <input class="form-controls" type="text" name="phone" placeholder="Your Phone" required>
+                    <textarea class="form-controls" placeholder="Write your message" name="message" cols="30" rows="5" required></textarea>
                     <input class="form-btn btn common-btn" type="submit" value="Send Message">
                 </form>
             </div>
