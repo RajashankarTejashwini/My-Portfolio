@@ -138,7 +138,7 @@ body {
         align-items: center;
         text-align: center;
         color: #fff;
-        background-image: radial-gradient(circle, rgba(15, 14, 14, 0.3), rgba(102, 96, 96, 0.4), rgba(163, 160, 160, 0.16)), url('./Images/heroImg3.avif');
+        background-image: radial-gradient(circle, rgba(15, 14, 14, 0.3), rgba(102, 96, 96, 0.4), rgba(163, 160, 160, 0.16)), url('Assets/image1.jfif');
         background-size: cover;
         background-position: center;
         height: 100vh; /* Full height */
