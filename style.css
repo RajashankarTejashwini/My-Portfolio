@@ -45,6 +45,17 @@
         padding: 0;
     }
 
+    .experience-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .experience-item {
+        flex: 1 1 calc(50% - 10px); /* Adjust to ensure two items per row with space between */
+        box-sizing: border-box;
+    }
+
     .my-row {
         gap: 10px;
     }
@@ -52,6 +63,17 @@
     .my-row .my-col {
         text-align: center;
         width: 100%;
+    }
+
+    .projects-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .my-col {
+        flex: 1 1 calc(50% - 10px); /* Adjust to ensure two items per row with space between */
+        box-sizing: border-box;
     }
 }
 
@@ -107,8 +129,7 @@
         padding: 0 1rem;
     }
 
-    .portfolio
-    {
+    .portfolio {
         padding: 0;
     }
 
@@ -134,13 +155,13 @@
 
     .experience-container {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         gap: 1rem;
     }
 
     .experience-item {
-        text-align: center;
-        padding: 1rem;
+        flex: 1 1 calc(50% - 10px); /* Adjust to ensure two items per row with space between */
+        box-sizing: border-box;
     }
 
     .services {
@@ -151,14 +172,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         margin: 1rem 0;
         gap: 1rem;
     }
 
-    .my-row .my-col {
+    .my-col {
         text-align: center;
-        width: 100%;
+        flex: 1 1 calc(50% - 10px); /* Adjust to ensure two items per row with space between */
+        box-sizing: border-box;
     }
 
     .contact {
