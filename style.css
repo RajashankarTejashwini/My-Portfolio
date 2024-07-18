@@ -10,7 +10,7 @@ body {
 .header {
     background: #333;
     color: #fff;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     text-align: center;
     position: fixed;
     width: 100%;
@@ -182,6 +182,11 @@ body {
     .experience-item,
     .projects-content .my-col {
         text-align: center;
+    }
+
+    .experience-item,
+    .projects-content .my-col {
+        flex: 1 1 calc(50% - 10px); /* Adjust to ensure two items per row with space between */
     }
 
     .contact-content {
