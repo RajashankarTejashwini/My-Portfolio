@@ -54,6 +54,67 @@ body {
     text-decoration: none;
 }
 
+/* Contact Section Styles */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 2rem;
+    background: #ffffff;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 1rem;
+}
+
+.get-in-touch {
+    font-size: 1.5rem;
+    color: #f39c12; /* Yellow color */
+    margin: 0.5rem 0 2rem 0; /* Adjust spacing as needed */
+}
+
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-controls {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-btn {
+    padding: 0.7rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.form-btn:hover {
+    background-color: #fff;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+}
+
 /* Responsive styles for mobile devices */
 @media screen and (max-width: 576px) {
     .header {
@@ -141,130 +202,87 @@ body {
         text-align: center;
     }
 
-   /* Projects Section Styles */
-.projects {
-    padding: 2rem 1rem;
-    background: #ffffff; /* Ensure the background is white */
-    text-align: center;
-}
-
-.projects-content {
-    display: flex;
-    flex-direction: column; /* Ensure flex direction is column */
-    gap: 1rem;
-    padding: 1rem;
-}
-
-.projects-content .my-col {
-    flex: 1 1 100%; /* Ensure one item per row */
-    box-sizing: border-box;
-}
-
-.projects-content .my-card {
-    background-color: #4CAF50;
-    color: white;
-    padding: 1rem;
-    margin: 10px 0; /* Add margin for spacing */
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex; /* Use flexbox for inner content */
-    flex-direction: column; /* Column layout for inner content */
-    align-items: center; /* Center the content */
-    text-align: center; /* Center text inside the card */
-    max-width: 100%; /* Ensure card does not overflow */
-    word-wrap: break-word; /* Handle long words */
-}
-
-/* Heading Styles */
-.section-heading {
-    font-size: 1.5rem; /* Adjust the font size as desired */
-    margin-bottom: 2rem;
-    white-space: nowrap; /* Prevent the heading from wrapping */
-    overflow: hidden; /* Hide overflow */
-    text-overflow: ellipsis; /* Add ellipsis for overflow text */
-}
-
-@media screen and (max-width: 576px) {
-    /* Responsive styles for mobile devices */
     .projects-content {
+        display: flex;
+        flex-direction: column; /* Ensure flex direction is column */
+        gap: 1rem;
         padding: 1rem;
+    }
+
+    .projects-content .my-col {
+        flex: 1; /* Make the column flexible */
+        box-sizing: border-box;
     }
 
     .projects-content .my-card {
+        background-color: #4CAF50;
+        color: white;
         padding: 1rem;
-        margin: 10px 0;
+        margin: 5px 0;
         border-radius: 5px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 100%; /* Ensure full width */
+        text-align: center; /* Center-align text */
     }
-}
 
-    
-.contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5rem 2rem;
-    background: #ffffff;
-    text-align: center;
-}
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5rem 2rem;
+        background: #ffffff;
+        text-align: center;
+    }
 
-.contact h2 {
-    margin-bottom: 0.5rem;
-}
+    .contact h2 {
+        margin-bottom: 1rem;
+    }
 
-.get-in-touch {
-    font-size: 1.5rem;
-    color: #f39c12; /* Yellow color */
-    margin: 0; /* Ensure no extra space */
-}
+    .get-in-touch {
+        font-size: 1.5rem;
+        color: #f39c12; /* Yellow color */
+        margin: 0.5rem 0 1.5rem 0; /* Adjusted spacing */
+    }
 
-.contact-form-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 1.5rem; /* Ensure space between headings and form */
-}
+    .contact-form-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1.5rem; /* Ensure space between headings and form */
+    }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 400px;
-}
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 400px;
+    }
 
-.form-controls {
-    width: 100%;
-    padding: 1rem;
-    margin: 0.5rem 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.form-btn {
-    padding: 0.7rem 1.5rem;
-    margin-top: 1rem;
-    border-radius: 5px;
-    border: none;
-    background-color: #4CAF50;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    width: 100%;
-}
-
-.form-btn:hover {
-    background-color: #fff;
-    color: #4CAF50;
-    border: 2px solid #4CAF50;
-}
-
-    .footer-menu {
+    .form-controls {
+        width: 100%;
         padding: 1rem;
+        margin: 0.5rem 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
     }
 
-    .footer-list-items {
-        margin: 0;
+    .form-btn {
+        padding: 0.7rem 1.5rem;
+        margin-top: 1rem;
+        border-radius: 5px;
+        border: none;
+        background-color: #4CAF50;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        width: 100%;
+    }
+
+    .form-btn:hover {
+        background-color: #fff;
+        color: #4CAF50;
+        border: 2px solid #4CAF50;
     }
 }
