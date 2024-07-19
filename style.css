@@ -142,13 +142,13 @@ body {
 
     .projects-content {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column; /* Ensure flex direction is column */
         gap: 1rem;
         padding: 2rem;
     }
 
     .projects-content .my-col {
-        flex: 1 1 100%; /* Adjust to ensure one item per row */
+        flex: 1 1 100%; /* Ensure one item per row */
         box-sizing: border-box;
     }
 
