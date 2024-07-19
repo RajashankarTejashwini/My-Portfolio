@@ -147,12 +147,12 @@ body {
         gap: 1rem;
         padding: 1rem;
     }
-
+    
     .projects-content .my-col {
-        flex: 1 1 100%; /* Ensure one item per row */
+        flex: 1; /* Make the column flexible */
         box-sizing: border-box;
     }
-
+    
     .projects-content .my-card {
         background-color: #4CAF50;
         color: white;
@@ -161,7 +161,7 @@ body {
         border-radius: 5px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
-
+    
     .contact-content {
         flex-direction: column;
         align-items: center;
