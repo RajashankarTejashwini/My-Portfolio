@@ -199,22 +199,68 @@ body {
 }
 
     
-    .contact-content {
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-        padding: 1rem;
-    }
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 2rem;
+    background: #ffffff;
+    text-align: center;
+}
 
-    .contact-form-container,
-    .contact-details {
-        width: 90%;
-    }
+.contact h2 {
+    margin-bottom: 1rem;
+}
 
-    .contact-form .form-controls,
-    .contact-form .form-btn {
-        width: 100%;
-    }
+.get-in-touch {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #f39c12; /* Yellow color */
+    margin-top: -1rem; /* Adjust as needed */
+}
+
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-controls {
+    width: 100%;
+    max-width: 400px;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-btn {
+    padding: 0.7rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-btn:hover {
+    background-color: #fff;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+}
 
     .footer-menu {
         padding: 1rem;
