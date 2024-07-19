@@ -144,11 +144,11 @@ body {
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
-        padding: 2rem;
+        padding: 5rem;
     }
 
     .projects-content .my-col {
-        flex: 1 1 calc(50% - 10px); /* Adjust to ensure two items per row with space between */
+        flex: 1 1 100%; /* Adjust to ensure one item per row */
         box-sizing: border-box;
     }
 
