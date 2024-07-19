@@ -120,36 +120,43 @@ body {
     }
 
     .about,
-    .experience-container,
-    .projects-content {
+    .experience-container {
         display: flex;
         flex-direction: column;
         gap: 1rem;
         padding: 1rem;
-        align-items: center; /* Center align items */
     }
 
     .about .about-text,
     .about .about-image img,
-    .experience-item,
-    .projects-content .my-col {
+    .experience-item {
         width: 100%;
-        max-width: 600px; /* Limit the max-width for better readability */
         padding: 1rem;
         box-sizing: border-box;
     }
 
     .about .about-text,
-    .experience-item,
-    .projects-content .my-col {
+    .experience-item {
         text-align: center;
+    }
+
+    .projects-content {
+        display: flex;
+        flex-direction: column; /* Ensure flex direction is column */
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .projects-content .my-col {
+        flex: 1 1 100%; /* Ensure one item per row */
+        box-sizing: border-box;
     }
 
     .projects-content .my-card {
         background-color: #528a54;
         color: white;
-        padding: 20px;
-        margin: 10px 0;
+        padding: 1rem;
+        margin: 5px 0;
         border-radius: 5px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
