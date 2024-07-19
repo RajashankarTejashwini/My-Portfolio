@@ -126,6 +126,7 @@ body {
         flex-direction: column;
         gap: 1rem;
         padding: 1rem;
+        align-items: center; /* Center align items */
     }
 
     .about .about-text,
@@ -133,6 +134,7 @@ body {
     .experience-item,
     .projects-content .my-col {
         width: 100%;
+        max-width: 600px; /* Limit the max-width for better readability */
         padding: 1rem;
         box-sizing: border-box;
     }
