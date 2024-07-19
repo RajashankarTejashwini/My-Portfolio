@@ -186,17 +186,47 @@ body {
         flex-direction: column; /* Ensure flex direction is column */
         gap: 1rem;
         padding: 1rem;
-        width: 100%; /* Ensure full width */
+        align-items: center; /* Center align items */
     }
-
-    .my-card {
+    
+    .projects-content .my-col {
+        width: 100%;
+        max-width: 600px; /* Limit the max-width for better readability */
         padding: 1rem;
-        margin: 1rem 0; /* Adjusted for better spacing */
+        box-sizing: border-box;
+    }
+    
+    .projects-content .my-card {
+        background-color: #528a54;
+        color: white;
+        padding: 1rem;
+        margin: 5px 0;
         border-radius: 5px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        text-align: left; /* Left-align text inside the card */
+        text-align: center; /* Center text alignment */
     }
-
+    
+    .projects-content .my-card .icon {
+        font-size: 2rem; /* Adjust icon size */
+        margin-bottom: 10px; /* Space between icon and text */
+    }
+    
+    .projects-content .my-card .greet-heading {
+        margin: 10px 0; /* Space between heading and paragraph */
+    }
+    
+    .projects-content .my-card .small-para {
+        font-size: 0.875rem; /* Adjust font size for better readability */
+    }
+    
+    /* Contact section styles */
+    .contact-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+    }
     .contact {
         display: flex;
         flex-direction: column;
