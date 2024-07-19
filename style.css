@@ -135,7 +135,7 @@ body {
         justify-content: center;
         align-items: center;
         text-align: center;
-        color: #fff;
+        color: #000;
         background: url('Assets/image1.jfif') no-repeat center center/cover;
         height: 100vh; /* Full height */
         padding: 2rem 1rem;
@@ -242,8 +242,7 @@ body {
 
     .get-in-touch {
         font-size: 1.5rem;
-        color: #f39c12; /* Yellow color */
-        margin: 0.5rem 0 1.5rem 0; /* Adjusted spacing */
+        margin: 1.5rem 0 1.5rem 0; /* Adjusted spacing */
     }
 
     .contact-form-container {
