@@ -32,6 +32,8 @@ body {
 
 .hamburger {
     display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .menu {
@@ -112,8 +114,13 @@ body {
         width: 100%;
         position: absolute;
         top: 60px;
-        right: 0;
+        left: 0;
         background-color: #333;
+        z-index: 999; /* Ensure menu is on top */
+    }
+
+    .menu.show {
+        display: flex;
     }
 
     .menu .menu-list {
@@ -127,7 +134,8 @@ body {
 
     .hamburger {
         display: block;
-        padding: 0 1rem;
+        font-size: 1.5rem;
+        cursor: pointer;
     }
 
     .hero {
