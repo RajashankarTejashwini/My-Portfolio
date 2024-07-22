@@ -222,25 +222,30 @@ body {
 
 /* Contact section styles */
 .contact {
-    padding: 5rem 2rem;
+    padding: 2rem 2rem;
     background: #ffffff;
     text-align: center;
+    border: 2px solid #4CAF50; /* Added border for the frame */
+    border-radius: 10px; /* Rounded corners for the frame */
+    margin: 2rem; /* Space around the frame */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for a 3D effect */
 }
 
 .contact h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem; /* Reduced bottom margin */
 }
 
 .get-in-touch {
     font-size: 1.5rem;
-    margin: 1.5rem 0; /* Adjusted spacing */
+    margin: 0.5rem 0; /* Reduced top and bottom margin */
 }
 
 .contact-form-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    margin-top: 5rem; /* Ensure space between headings and form */
+    margin-top: 1rem; /* Reduced top margin */
 }
 
 .contact-form {
@@ -281,19 +286,20 @@ body {
 @media screen and (max-width: 576px) {
     .contact {
         padding: 2rem 1rem;
+        margin: 1rem; /* Reduced margin for smaller screens */
     }
 
     .contact h2 {
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem; /* Reduced bottom margin */
     }
 
     .get-in-touch {
         font-size: 1.25rem;
-        margin: 1rem 0; /* Adjusted spacing */
+        margin: 0.5rem 0; /* Adjusted spacing */
     }
 
     .contact-form-container {
-        margin-top: 3rem; /* Reduced space for smaller screens */
+        margin-top: 1rem; /* Reduced space for smaller screens */
     }
 
     .contact-form {
