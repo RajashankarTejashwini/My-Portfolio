@@ -94,6 +94,64 @@ body {
     margin: 0.5rem 0 0 0;
 }
 
+/* Contact section styles */
+.contact {
+    padding: 5rem 2rem;
+    background: #ffffff;
+    text-align: center;
+}
+
+.contact-heading {
+    margin-bottom: 2rem;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-controls {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-btn {
+    padding: 0.7rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.form-btn:hover {
+    background-color: #fff;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+}
+
 /* Responsive styles for mobile devices */
 @media screen and (max-width: 576px) {
     .header {
